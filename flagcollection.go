@@ -10,7 +10,7 @@ type FlagCollection struct {
 
 func SetFlagCollection() FlagCollection {
 	var flags FlagCollection
-	flag.BoolVar(&flags.ConfigTest, "test", false, "read test flag")
+	flag.BoolVar(&flags.ConfigTest, "configtest", false, "read test flag")
 	flag.Parse()
 
 	return flags
